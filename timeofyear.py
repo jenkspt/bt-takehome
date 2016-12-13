@@ -82,4 +82,4 @@ if __name__ == '__main__':
 	fig, ax = plt.subplots(1,1)
 	title='Posting Frequency (questions and answers)'
 	plot_years(posts_df[posts_df.CreationDate.dt.year >= 2010], title=title, ax=ax)
-	plt.savefig('plots/timeofyear_frequency.pdf')
+	plt.savefig('plots/timeofyear_frequency.png')

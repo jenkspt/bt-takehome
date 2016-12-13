@@ -50,12 +50,12 @@ if __name__ == '__main__':
 	top_topics = get_top_tags(df[columns])
 	fig, ax1 = plt.subplots(1,1)
 	ax1 = plot_top_tags(df.ix[top_topics, columns], sort_by='ViewCount', title='Top Topics', ax=ax1)
-	fig.savefig('plots/top_topics.pdf')
+	fig.savefig('plots/top_topics.png')
 
 	# OS related posts
 	fig, ax2 = plt.subplots(1,1)
 	ax2 = plot_top_tags(group_os_release(df), title='Major Ubuntu Releases', ax=ax2)
-	fig.savefig('plots/os_releases.pdf')
+	fig.savefig('plots/os_releases.png')
 
 	# Top Activity Bar Chart: Activity metrics = 'CommentCount', 'AnswerCount', 'FavoriteCount'
 	columns = ['CommentCount', 'AnswerCount', 'FavoriteCount']
@@ -63,5 +63,5 @@ if __name__ == '__main__':
 	fig, ax3 = plt.subplots(1,1)
 	title = 'Topics Generating The Most Activity'
 	ax3 = plot_top_tags(df.ix[top_activity, columns], sort_by='CommentCount', title=title, ax=ax3)
-	fig.savefig('plots/top_activity.pdf')
+	fig.savefig('plots/top_activity.png')
 	

@@ -69,7 +69,7 @@ if __name__ == '__main__':
 	os_tags_df[tag_column] = os_tags_df.Tag.str[:3]
 
 	plot_change(os_tags_df, tag_column=tag_column, title=title, ax=ax)
-	fig.savefig('plots/os_questions_yearly.pdf')
+	fig.savefig('plots/os_questions_yearly.png')
 
 
 	# Top Year Tags Plot
@@ -80,4 +80,4 @@ if __name__ == '__main__':
 	top_tags_df = get_yearly_top_tags_df(top_tags_df, k=1)
 
 	plot_change(top_tags_df, title=title, tag_column='Tag', ax=ax)
-	fig.savefig('plots/tag_questions_yearly.pdf')	
+	fig.savefig('plots/tag_questions_yearly.png')	
