@@ -21,11 +21,11 @@ Analysing the sentiment of posts is beyond the scope and timeframe I have for th
 The multilingual nature of this dataset adds another layer of complexity, since the most frequently used words (not including stop-words) in the **title** and **body** of all the posts are not english words.
 
 ## 3. How Do Posts Vary By Time Of Year And Time Of Day?
-![Time Of Year Posting Frequency](bt-takehome/plots/timeofyear_frequency.png)  
+![Time Of Year Posting Frequency](plots/timeofyear_frequency.png)  
 
 The sharp increase in posting frequency near the end of April, as well as the end of October, indicate strong seasonality. These are are correllated with \*\*.04 and \*\*.10 Ubuntu releases which roll out every six months. It is also evident (but less clear in this plot) that odd years have lower posting frequencies then even years, which correlates with LTS (Long Term Support) versions which are released on even years.
 
-![Time Of Day Posting Frequency](bt-takehome/plots/timeofday_frequency.png)  
+![Time Of Day Posting Frequency](plots/timeofday_frequency.png)  
 
 The even though the *CreationDate* datetime feature is very granular (down to the millisecond or microsecond), it is not epecially useful without the knowing the time zone of the user making the post. This information may be available in the Users.xml file.
 
@@ -34,18 +34,18 @@ The even though the *CreationDate* datetime feature is very granular (down to th
 Activity metrics require active interaction with a question post (i.e. answers, comments, favorites). 
 Top activity tags shown are those that occur in the top 15 for each metric.
 
-![Top Activity](bt-takehome/plots/top_activity.png)  
+![Top Activity](plots/top_activity.png)  
 *grub2* is the only tag that appears in the top topics (**Count** and **ViewCount**), but not in the top activity. This suggests, not supprisingly, a collinear relationship between all of the tag metrics.
 
 ## 6. How Have The Nature Of Posts Evolved Over Time?
 
-![Time Of Day Posting Frequency](bt-takehome/plots/os_questions_yearly.png)  
+![Time Of Day Posting Frequency](plots/os_questions_yearly.png)  
 This plot shows how the Frequency of posts tagged with specific Ubuntu Releases has changed from 2010 - 2016. 
 
-![Tag Questions Yearly](bt-takehome/plots/tag_questions_yearly.png)  
+![Tag Questions Yearly](plots/tag_questions_yearly.png)  
 This plot shows the change in Frequency of posts with these tags. The tags list is the union of the top tag for each year.
 
-#### [Fields](bt-takehome/master/data/fields.md)
+#### [Fields](fields.md)
 ##### There are 6 metrics that can be used to evaluate each tag: 
 * **Count**: The Frequency of the tag occuring in question posts
 * **ViewCount**: How many times a given tag has been viewed
