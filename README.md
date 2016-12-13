@@ -5,7 +5,7 @@
 The tags on each question post are being considered topics.
 A question post can have a maximum of 5 tags, where 75% of question posts have 1-3 tags.
 
-![Top Topics](bt-takehome/plots/top_topics.png)
+![Top Topics](bt-takehome/plots/top_topics.png?raw=true "Top Topics")
 
 This plot shows the top 11 tags between 2009-01-08 and 2016-09-04.
 
