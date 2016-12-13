@@ -1,6 +1,6 @@
 # Ask Ubuntu Data Dump Analysis
 ---------------------------------
-
+Penn Jenk
 ## 1. what Are The Top Topics That Users Post About?
 The tags on each question post are being considered topics.
 A question post can have a maximum of 5 tags, where 75% of question posts have 1-3 tags.
@@ -31,21 +31,20 @@ The even though the *CreationDate* datetime feature is very granular (down to th
 
 ## 5. Which Topics Generate The Most Activity On The Post?
 
-Activity metrics require active interaction with a question post (i.e. answers, comments, favorites). 
+Activity metrics are those that include interaction with a question post (i.e. answers, comments, favorites).
 Top activity tags shown are those that occur in the top 15 for each metric.
 
 ![Top Activity](plots/top_activity.png)  
 *grub2* is the only tag that appears in the top topics (**Count** and **ViewCount**), but not in the top activity. This suggests, not supprisingly, a collinear relationship between all of the tag metrics.
 
-## 6. How Have The Nature Of Posts Evolved Over Time?
-
+## 6. How Have The Nature Of Posts Evolved Over Time?  
 ![Time Of Day Posting Frequency](plots/os_questions_yearly.png)  
-This plot shows how the Frequency of posts tagged with specific Ubuntu Releases has changed from 2010 - 2016. 
+This plot shows how the Frequency of posts tagged with specific Ubuntu Releases has changed from 2011 - 2016.
 
 ![Tag Questions Yearly](plots/tag_questions_yearly.png)  
 This plot shows the change in Frequency of posts with these tags. The tags list is the union of the top tag for each year.
 
-#### [Fields](fields.md)
+## [Fields](fields.md)
 ##### There are 6 metrics that can be used to evaluate each tag: 
 * **Count**: The Frequency of the tag occuring in question posts
 * **ViewCount**: How many times a given tag has been viewed
