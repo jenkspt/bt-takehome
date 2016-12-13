@@ -1,0 +1,21 @@
+Analyze the stack exchange data dump of user-contributed posts from
+
+https://archive.org/download/stackexchange/askubuntu.com.7z to answer the following
+
+questions:
+
+1. What are the top topics that users post about?
+
+2. what are the most common sentiments when user post questions?
+
+3. How do posts vary by time of year and time of day?
+
+4. How are posts made on weekends different from posts made on weekdays?
+
+5. Which topics generate the most activity on the post?
+
+6. How have the nature of posts evolved over time?
+
+Feel free to use your favorite programming language/framework. Document all your
+
+assumptions.
